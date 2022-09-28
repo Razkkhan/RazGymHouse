@@ -5,6 +5,7 @@ import ListOrder from '../ListOrder/ListOrder';
 
 const Body = () => {
     const [data, setData] = useState([])
+    
     const [listOrder, setListOrder] = useState([]);
     useEffect(()=>{
         fetch('data.json')
