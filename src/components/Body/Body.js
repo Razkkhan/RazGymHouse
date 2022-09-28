@@ -5,6 +5,7 @@ import ListOrder from '../ListOrder/ListOrder';
 
 const Body = () => {
     const [data, setData] = useState([])
+    const [listOrder, setListOrder] = useState([]);
     useEffect(()=>{
         fetch('data.json')
         .then(res => res.json())
@@ -13,7 +14,8 @@ const Body = () => {
     },[]);
 
     const handleAddButton = (props) =>{
-        console.log('check', props)
+        const newList = [...listOrder, props]
+        setListOrder(newList)
         
     }
 
@@ -26,7 +28,7 @@ const Body = () => {
             }
             </div>
             <div className="list-container">
-            <ListOrder></ListOrder>
+            <ListOrder listOrder={listOrder}></ListOrder>
             </div>
         </div>
     );

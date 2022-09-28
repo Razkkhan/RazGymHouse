@@ -15,11 +15,11 @@ const Card = (props) => {
                 For Age: {age}
             </p>
             <p>
-               Time required: {time}
+               Time required: {time}m
             </p>
             </div>
            
-            <button onClick={()=> handleAddButton(props)} className='btn'>Add To List</button>
+            <button onClick={()=> handleAddButton(props.cart)} className='btn'>Add To List</button>
     
         </div>
     );

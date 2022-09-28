@@ -1,6 +1,15 @@
 import React from 'react';
 import './ListOrder.css'
-const ListOrder = () => {
+const ListOrder = (props) => {
+    
+    const {listOrder} = props
+    
+    let time = 0;
+    for(const list of listOrder){
+        time = time + list.time
+        // console.log(list)   
+    }
+
     return (
         <div className='list-class'>
         <div className='about-me'>
@@ -22,11 +31,11 @@ const ListOrder = () => {
         <h3>ExerCise Details</h3>
         <div className="exercise-time">
             <h5> Exercise Time</h5>
-            <p>200m</p>
+            <p></p>
         </div>
         <div className="break-time">
         <h5>Break Time</h5>
-            <p>200m</p>
+            <p><span>{time}m</span></p>
         </div>
        </div>
        <button className='button'>Activity Completed</button>
