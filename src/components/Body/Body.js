@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Body.css'
 import Card from '../Card/Card';
+import ListOrder from '../ListOrder/ListOrder';
 
 const Body = () => {
     const [data, setData] = useState([])
@@ -19,7 +20,7 @@ const Body = () => {
             }
             </div>
             <div className="list-container">
-            <h1>hello</h1>
+            <ListOrder></ListOrder>
             </div>
         </div>
     );

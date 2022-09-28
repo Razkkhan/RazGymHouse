@@ -1,0 +1,11 @@
+.about-me{
+    color: white;
+    background-color: #0F3460;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.list-class{
+    position: sticky;
+    top: 0;
+}
