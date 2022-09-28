@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './ListOrder.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const ListOrder = (props) => {
-    
+    const notify = () => toast("Wow your activity is completed!");
     const {listOrder} = props
     
     let time = 0;
@@ -9,17 +11,11 @@ const ListOrder = (props) => {
         time = time + list.time
         // console.log(list)   
     }
-
-
     const [BreakTime, setBreakTime] = useState(0)
-
-
     const handleBreakTime = (second) => {
         setBreakTime(second)
         
     }
-
-
     return (
         <div className='list-class'>
         <div className='about-me'>
@@ -58,7 +54,10 @@ const ListOrder = (props) => {
             <p><span>{BreakTime}s</span></p>
         </div>
        </div>
-       <button className='button'>Activity Completed</button>
+            <div>
+            <button onClick={notify}className='button'>Activity Completed</button>
+            <ToastContainer />
+            </div>
         </div>
     );
 };
