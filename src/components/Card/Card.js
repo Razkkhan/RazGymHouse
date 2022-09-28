@@ -2,7 +2,7 @@ import './Card.css'
 import React from 'react';
 
 const Card = (props) => {
-    // console.log(props.cart)
+    const {handleAddButton} = props
     const {img,category, description,age, time } = props.cart
     
     return (
@@ -19,7 +19,7 @@ const Card = (props) => {
             </p>
             </div>
            
-            <button className='btn'>Add To List</button>
+            <button onClick={()=> handleAddButton(props)} className='btn'>Add To List</button>
     
         </div>
     );

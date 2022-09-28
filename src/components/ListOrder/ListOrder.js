@@ -18,6 +18,18 @@ const ListOrder = () => {
             <button><span>50</span>s</button>
         </div>
        </div>
+       <div className="exercise-details">
+        <h3>ExerCise Details</h3>
+        <div className="exercise-time">
+            <h5> Exercise Time</h5>
+            <p>200m</p>
+        </div>
+        <div className="break-time">
+        <h5>Break Time</h5>
+            <p>200m</p>
+        </div>
+       </div>
+       <button className='button'>Activity Completed</button>
         </div>
     );
 };

@@ -16,4 +16,35 @@
 .add-break{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 
 5px 15px;
+padding: 10px;
+}
+.exercise-details{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 
+5px 15px;
+padding: 10px;
+}
+
+
+.exercise-time{
+display: flex;
+justify-content: space-around;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 
+5px 15px;
+}
+.break-time{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 
+5px 15px;
+}
+.button{
+    background-color: #F07DEA;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 
+5px 15px;
 }
