@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Body.css'
 import Card from '../Card/Card';
 import ListOrder from '../ListOrder/ListOrder';
-import { localStorageHandle } from '../storeData/StoreData';
+
 
 
 const getLocalItem = () =>{
@@ -32,12 +32,10 @@ const Body = () => {
         setBreakTime(second)
     }
 
-
     const handleAddButton = (props) =>{
         const newList = [...listOrder, props]
         setListOrder(newList)
     }
-
 
     return (
         <div className='container'>

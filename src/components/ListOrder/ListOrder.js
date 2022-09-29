@@ -14,10 +14,8 @@ const ListOrder = (props) => {
 
     let time = 0;
     for(const list of listOrder){
-        time = time + list.time
-        
+        time = time + list.time  
     }
-
     return (
         <div className='list-class'>
         <div className='about-me'>
@@ -35,7 +33,7 @@ const ListOrder = (props) => {
         </div>
        </div>
        <div className="exercise-details">
-        <h3>ExerCise Details</h3>
+        <h3 className='exercise'>ExerCise Details</h3>
         <div className="exercise-time">
             <h5> Exercise Time</h5>
             <p><span className='times'>{time}</span> minutes</p>
