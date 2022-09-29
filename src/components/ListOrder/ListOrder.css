@@ -4,10 +4,10 @@
     font-family: 'Poppins', sans-serif;
     background-color: #B7C4CF;
 }
-/* .list-class{
+.list-class{
     position: sticky;
     top: 0;
-} */
+}
 .add-break button{
     border: none;
     padding: 10px;
