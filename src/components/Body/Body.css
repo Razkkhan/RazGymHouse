@@ -19,9 +19,18 @@ margin: 30px 10px;
 
 
 }
-
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 576px) {
     .card-container{
         grid-template-columns: 1fr;
     }
 }
+@media (min-width: 576px) { .card-container{
+    grid-template-columns: 1fr;
+} }
+
+@media (min-width: 768px) { .card-container{
+    grid-template-columns: repeat(2, 1fr);
+} }
+@media (min-width: 992px) { .card-container{
+    grid-template-columns: repeat(3,1fr);
+} }

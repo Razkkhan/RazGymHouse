@@ -9,11 +9,27 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
+    
 }
 .nav-link a{
     text-decoration: none;
     color: white;
     margin-right: 1rem;
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+
+}
+.nav-link a:hover{
+    --_p: 100%
 }
 .icon{
     color: #F96666;
@@ -25,7 +41,7 @@ font-family: 'Bungee Spice', cursive;
 .blogs{
     font-size: 1.5rem;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 576px) {
     .nav{
         flex-direction: column;
     }
