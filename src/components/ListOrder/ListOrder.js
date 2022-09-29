@@ -1,27 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ListOrder.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { addToStorage } from '../storeData/StoreData';
 
 
 
 const ListOrder = (props) => {
+    // console.log(props)
+    const {BreakTime, handleBreakTime } = props
+    
     const notify = () => toast("Wow your activity is completed!");
-
     const {listOrder} = props
-    const [cart, setCart] = useState([])
+
     let time = 0;
     for(const list of listOrder){
         time = time + list.time
-        // console.log(list)   
+        
     }
-    const [BreakTime, setBreakTime] = useState(0)
-    const handleBreakTime = (second) => {
-        setBreakTime(second)
-        addToStorage(second)
-    }
-    
+
     return (
         <div className='list-class'>
         <div className='about-me'>
@@ -32,18 +28,10 @@ const ListOrder = (props) => {
        <div className="add-break">
         <h4>Add a Break</h4>
         <div>
-            <button onClick={()=>{
-                handleBreakTime(10)
-            }}><span>10</span>s</button>
-            <button onClick={()=>{
-                handleBreakTime(20)
-            }}><span>20</span>s</button>
-            <button onClick={()=>{
-                handleBreakTime(30)
-            }}><span>30</span>s</button>
-            <button onClick={()=>{
-                handleBreakTime(40)
-            }}><span>40</span>s</button>
+            <button onClick={()=>handleBreakTime(10)}><span>10</span>s</button>
+            <button onClick={()=>handleBreakTime(20)}><span>20</span>s</button>
+            <button onClick={()=>handleBreakTime(30)}><span>30</span>s</button>
+            <button onClick={()=>handleBreakTime(40)}><span>40</span>s</button>
         </div>
        </div>
        <div className="exercise-details">

@@ -1,18 +1,28 @@
-const addToStorage = (props) =>{
-    const information = {id: props, quantity: 1}
-    const getLocalStorage = JSON.parse(localStorage.getItem('times'))
-    if(getLocalStorage){
-        const isExists = getLocalStorage.find(store => store.id === props.id)
-        if(isExists){
-            isExists.quantity = isExists.quantity + 1;
-            localStorage.setItem('times',JSON.stringify(getLocalStorage))
-        } else{
-            localStorage.setItem('times', JSON.stringify([...getLocalStorage, information]))
-        }
-    }else{
-        localStorage.setItem('times', JSON.stringify([information]))
-    }
-
+const addToStorage = (min) =>{
     
+
+localStorage.setItem('time', JSON.stringify(timeBreak))
 }
-export {addToStorage}
+const localStorageHandle =() =>{
+    let timeBreak = {};
+    const storeTime = localStorage.getItem('time')
+    if(storeTime){
+        timeBreak = JSON.parse(storeTime)
+    }
+    return timeBreak
+}
+export {addToStorage ,localStorageHandle }
+
+
+// let timeBreak = {};
+// const storeTime = localStorage.getItem('time')
+// if(storeTime){
+//     timeBreak = JSON.parse(storeTime)
+// }
+// const quantity = timeBreak[id]
+// if(quantity){
+//     const newQuantity = quantity + 1;
+//     timeBreak[id] = newQuantity
+// }else{
+//     timeBreak[id] = 1;
+// }

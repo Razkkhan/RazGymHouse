@@ -11,7 +11,7 @@
     {
         "id": 2,
         "category": "Dumble",
-        "description": "The dumbbell is a type of exercise equipment used in weight training. Specifically, dumbbells are weights used without exercise machines. Dumbbells are sometimes also called hand weights and free weights",
+        "description": "The dumbbell is a type of exercise equipment used in weight training. Specifically, dumbbells are weights used without exercise machines.",
         "img": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         "age": "30-35",
         "time": 10,
