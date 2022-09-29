@@ -1,16 +1,23 @@
 .container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    background-image: url(ap.png);
+    
 }
 .card-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     margin: 30px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .list-container{
-background-color: #B7C4CF;
+    background-image: url(ap4.png);
+/* background-color: #B7C4CF; */
 text-align: center;
+margin: 30px 10px;
+
+
 }
 
 @media screen and (max-width: 780px) {

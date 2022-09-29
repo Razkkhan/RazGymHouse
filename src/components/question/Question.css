@@ -1,0 +1,48 @@
+.main{
+    background-image: url(ap.png);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+}
+
+
+.div-1{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 
+    5px 15px;
+    padding: 10px;
+    width: 700px;
+}
+.div-2{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 
+    5px 15px;
+    padding: 10px;
+    width: 700px;
+    
+}
+.div-3{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 
+    5px 15px;
+    padding: 10px;
+    width: 700px;
+}
+.titles{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 
+    5px 15px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Aref Ruqaa Ink', serif;
+    
+}
+.desc-cart{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+@media screen and (max-width: 780px) {
+    .main{
+        flex-direction: column;
+    }
+}

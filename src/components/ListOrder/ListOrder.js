@@ -2,10 +2,15 @@ import React, { useState } from 'react';
 import './ListOrder.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { addToStorage } from '../storeData/StoreData';
+
+
+
 const ListOrder = (props) => {
     const notify = () => toast("Wow your activity is completed!");
+
     const {listOrder} = props
-    
+    const [cart, setCart] = useState([])
     let time = 0;
     for(const list of listOrder){
         time = time + list.time
@@ -14,8 +19,9 @@ const ListOrder = (props) => {
     const [BreakTime, setBreakTime] = useState(0)
     const handleBreakTime = (second) => {
         setBreakTime(second)
-        
+        addToStorage(second)
     }
+    
     return (
         <div className='list-class'>
         <div className='about-me'>
@@ -38,20 +44,17 @@ const ListOrder = (props) => {
             <button onClick={()=>{
                 handleBreakTime(40)
             }}><span>40</span>s</button>
-            <button onClick={()=>{
-                handleBreakTime(50)
-            }}><span>50</span>s</button>
         </div>
        </div>
        <div className="exercise-details">
         <h3>ExerCise Details</h3>
         <div className="exercise-time">
             <h5> Exercise Time</h5>
-            <p>{time}m</p>
+            <p><span className='times'>{time}</span> minutes</p>
         </div>
         <div className="break-time">
         <h5>Break Time</h5>
-            <p><span>{BreakTime}s</span></p>
+            <p><span className='break'>{BreakTime}</span>Seconds</p>
         </div>
        </div>
             <div>

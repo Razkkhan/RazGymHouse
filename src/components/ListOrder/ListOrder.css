@@ -1,22 +1,29 @@
 .about-me{
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
+    font-family: 'Poppins', sans-serif;
+    background-color: #B7C4CF;
 }
 .list-class{
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
 }
 .add-break button{
     border: none;
     padding: 10px;
     border-radius: 50%;
     margin: 5px;
+    border: 1px solid lightblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 
+    5px 15px;
+    
 }
 .add-break{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 
 5px 15px;
 padding: 10px;
+margin: 10px 0px;
+background-color: #B7C4CF;
 }
 .exercise-details{
 box-shadow: rgba(0, 0, 0, 0.35) 0px 
@@ -31,6 +38,7 @@ justify-content: space-around;
 align-items: center;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 
 5px 15px;
+background-color: #B7C4CF;
 }
 .break-time{
     display: flex;
@@ -39,6 +47,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px
     box-shadow: rgba(0, 0, 0, 0.35) 0px 
 5px 15px;
 margin-top: 10px;
+background-color: #B7C4CF;
 }
 .button{
     background-color: #F07DEA;
@@ -48,4 +57,28 @@ margin-top: 10px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 
 5px 15px;
+font-size: 1.2rem;
+}
+.times{
+color: red;
+font-size: 1.4rem;
+font-weight: bold;
+}
+.break{
+    color: red;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+@media screen and (max-width: 780px) {
+    .break-time{
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise-time{
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+       font-size: 1rem;
+    }
 }

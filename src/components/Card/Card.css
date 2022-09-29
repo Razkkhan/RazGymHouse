@@ -1,13 +1,14 @@
 .cards{
     border-radius: 10px;
-    border: 2px solid orange;
+    border: 2px solid gray;
     padding: 10px;
     text-align: center;
     height: 600px;
-    background-color: #eee;
+    color: white;
+    font-family: 'Abyssinica SIL', serif;
 }
 .cards img{
-    width: 286px;
+    width: 100%;
     height: 286px;
     border-radius: 5px;
 }
