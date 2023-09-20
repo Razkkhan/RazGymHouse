@@ -1,0 +1,50 @@
+.main{
+    background-color: rgb(240, 163, 163);
+    color: black;
+    padding: 30px;
+    text-align: center;
+    /* display: flex; */
+    display: flex;
+
+}
+
+
+.div-1{
+
+    padding: 10px;
+
+}
+.div-2{
+    
+    
+    padding: 10px;
+
+    
+}
+.div-3{
+
+    padding: 10px;
+
+}
+.titles{
+    
+    padding: 10px;
+    font-weight: bold;
+    
+    
+}
+
+@media screen and (max-width: 576px) {
+    .main{
+
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+@media screen and (max-width: 768px) {
+    .main{
+        flex-direction: column;
+    }
+}
